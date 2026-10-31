@@ -17,10 +17,9 @@ cask "dbnerd" do
 
   app "DBNerd.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/DBNerd.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/DBNerd.app"]
   end
 
   zap trash: [
