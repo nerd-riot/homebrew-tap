@@ -1,6 +1,6 @@
 cask "dbnerd" do
-  version "1.2.3"
-  sha256 "635c0be164fe7c86e43dff1a85e5efff530e008f3ecca4245ec2ef8cd6206974"
+  version "1.2.4"
+  sha256 "39dca8cdf41c1381930a47a3999c84d42ee0767facf3ad98d26cc66bd8f1f7e3"
 
   url "https://github.com/nerd-riot/db-nerd/releases/download/v#{version}/DBNerd_#{version}_aarch64.dmg"
   name "DBNerd"
@@ -14,6 +14,7 @@ cask "dbnerd" do
 
   auto_updates true
   depends_on arch: :arm64
+  depends_on :macos
 
   app "DBNerd.app"
 
