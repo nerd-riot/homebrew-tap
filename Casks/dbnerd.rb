@@ -1,6 +1,6 @@
 cask "dbnerd" do
-  version "1.2.4"
-  sha256 "39dca8cdf41c1381930a47a3999c84d42ee0767facf3ad98d26cc66bd8f1f7e3"
+  version "1.2.5"
+  sha256 "7d778daf768435184a537dde31eed17ed80ceaa9296546098b2bad28a67471ad"
 
   url "https://github.com/nerd-riot/db-nerd/releases/download/v#{version}/DBNerd_#{version}_aarch64.dmg"
   name "DBNerd"
